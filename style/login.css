@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #708090 ;
+  padding: 15px 0;
+  height: 50px;
+  position: relative;
+  z-index: 11;
+  
+}
+
+.giohang-edit
+{
+  background-color: #808080;
+
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 0px;
+  font-size: 20px;
+  
+}
+/*tim kiem*/
+.search-icon {
+width: 30px;
+height: 30px;
+background-color: #708090;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.search-icon i {
+color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+.logo h7 {
+  font-size: 40px;
+  text-shadow: 1px 1px 0px rgba(221, 237, 243, 0.929);
+  color: darkgray;
+}
+.logo img {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-menu a:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: #333;
+  padding: 15px;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.sub-menu li {
+  margin-bottom: 10px;
+}
+
+.sub-menu a {
+  padding: 10px 10px;
+}
+
+.nav-menu li:hover > .sub-menu {
+  display: block;
+}
+/*Form Dang ki */
+.FormDangKi {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: auto ; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0f7ae5;
+}
+.quenMK
+{
+    text-align: right;
+    
+}
+.login
+{
+    margin-top: 10px;
+}
+/*Form Dang ki */
+#chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chat-button {
+  
+  color: royalblue;
+  padding: 30px 30px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  
+}
+
+.chat-box {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+.icon {
+  font-size: 50px; /* Kích thước của biểu tượng */
+}
+/* Thẻ footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 25%;
+  padding: 0 20px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.footer-column p
+{
+  color: #bbb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #717171;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+}
+/* Thẻ footer*/

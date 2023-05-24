@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="style\gioithieu.css">
+    <script src="https://kit.fontawesome.com/4e7deb27d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+       <a href="index.html">
+        <h7>Logitech</h7>
+       </a>
+        
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li>
+            <a href="#">Sản phẩm</a>
+            <ul class="sub-menu">
+              <li><a href="Chuoc.html">Chuộc</a></li>
+              <li><a href="BanPhim.html">Bàn phím</a></li>
+              <li><a href="Chuoc.html">Tai nghe</a></li>
+            </ul>
+          </li>
+          <li><a href="gioiThieu.html">Giới thiệu</a></li>
+          <li><a href="dangki.html">Đăng ký</a></li>
+          <li><a href="giohang.html">
+            <div class="search-icon" style="font-size: 30px;"><i class="fa-solid fa-cart-shopping"></i></div></a></li>
+            <li><a href="login.html">
+              <div class="usericon" style="font-size: 30px;"><i class="fa-solid fa-user"></i></div></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+  <br><br>
+  <div id="chat-widget">
+    <!-- Hiển thị biểu tượng hoặc văn bản để mở chat -->
+    <div class="chat-button">
+      <span class="icon"><i class="fa-solid fa-comment-dots"></i></span>
+
+    </div>
+    
+    <!-- Hiển thị ô chat -->
+    <div class="chat-box">
+      <!-- Nội dung chat sẽ được tải lên từ công cụ chat của bên thứ ba -->
+      <p>Hi</p>
+    </div>
+  </div>
+      <!--Slideshow -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image\h22.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image\h33.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image\h11.jpg" style="width:100%">
+          <div class="text">Chủ Sở</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <!--Slideshow -->
+
+      <!--Java de xu li Slide-->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <br>
+        <br>
+        <div class="body-content">
+          <h1>Giới thiệu về dự án</h1>
+          <div class="content-shop">
+            <p style="text-align: center; font-size: 20px;"><strong>My Information</strong></p>
+            <ul style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              <div class="about-me">
+                <img src="image/avt.jpg" alt="Your Name">
+                <h3>ID: <b>2001210674</b></h3>
+                <h3>Name: <b>Ngô Chí Thiện</b></h3>
+                <h3>Class: <b>12DHTH01</b></h3>
+                <p>Project: Tạo 1 website bán linh kiện máy tính có Thương hiệu là Logitech</p>
+                
+              </div>
+              <div id="read-more-button" onclick="toggleContent()"><b>Xem Thêm</b></div>
+              <div id="more-content" style="display: none;">
+              <li>Xin chào! Tôi là sinh viên đam mê công nghệ và thương mại điện tử, và chúng tôi tự hào giới thiệu dự án của chúng tôi - một trang web bán sản phẩm về Logitech.</li>
+              <li>Với sự đam mê về công nghệ và niềm yêu thích với thương hiệu Logitech, chúng tôi đã tạo ra một trang web chuyên về các sản phẩm công nghệ cao cấp từ Logitech, từ chuột, bàn phím, tai nghe, webcam và nhiều sản phẩm khác.</li>
+              <li>Dự án của chúng tôi nhằm cung cấp cho khách hàng một trải nghiệm mua sắm trực tuyến tuyệt vời và thuận tiện. Trên trang web, bạn sẽ tìm thấy một bộ sưu tập đa dạng của các sản phẩm Logitech chất lượng cao với thiết kế tinh tế và tính năng nổi bật.</li>
+              <li>Chúng tôi cam kết đem đến cho khách hàng những sản phẩm chính hãng, đảm bảo về chất lượng và hiệu suất. Đội ngũ chúng tôi đã tận dụng công nghệ tiên tiến để tạo ra một giao diện người dùng thân thiện, giúp khách hàng dễ dàng tìm kiếm, lựa chọn và mua sắm các sản phẩm Logitech một cách nhanh chóng và tiện lợi.</li>
+              <li>Ngoài ra, chúng tôi luôn đặt khách hàng lên hàng đầu, và cam kết cung cấp dịch vụ chăm sóc khách hàng tận tâm và chuyên nghiệp. Đội ngũ hỗ trợ của chúng tôi sẵn sàng trợ giúp và giải đáp mọi thắc mắc của khách hàng thông qua các kênh liên lạc như chat trực tuyến, điện thoại và email...</li>
+              <li>Với các sản phẩm được bán ở hầu hết các quốc gia trên thế giới, Logitech thiết kế các sản phẩm giúp các doanh nghiệp phát triển mạnh mẽ và kết nối mọi người với nhau thông qua âm nhạc, trò chơi, phát trực tuyến, video và máy tính. Các thương hiệu của Logitech bao gồm Logitech, Logitech G, ASTRO Gaming, Ultimate Ears, Jaybird, Blue Microphones và Streamlabs.</li>
+            </div>
+            
+            </ul>
+            <div class="photo-wrapper">
+              <img src="image\h22.jpg">
+              <img src="image\h33.jpg">
+                      
+            </div>
+                  <div class="photo-wrapper">
+                      <img src="image\h33.jpg">
+                      <img src="image\h44.jpg">
+                  </div>
+            <p style="font-size: 20px">Hãy đến với trang web của chúng tôi và khám phá các sản phẩm tuyệt vời từ Logitech. Chúng tôi hy vọng rằng bạn sẽ tìm thấy những sản phẩm mà bạn đang tìm kiếm, và trải nghiệm mua sắm trực tuyến dễ dàng và vui vẻ.</p>
+            <h3>Vì sao chọn Logitech?</h3>
+            <ul style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              <b>
+              <li>Chúng tôi cam kết cung cấp cho khách hàng các sản phẩm với chất lượng cao nhất và tính năng đa dạng để đáp ứng nhu cầu của mọi người.</li>
+              <li>Chúng tôi luôn lắng nghe và đáp ứng các ý kiến đóng góp của khách hàng để nâng cao chất lượng sản phẩm và dịch vụ của mình.</li>
+              <li>Chúng tôi có đội ngũ hỗ trợ khách hàng chuyên nghiệp, sẵn sàng giải đáp các thắc mắc và hỗ trợ khách hàng mọi lúc mọi nơi.</li>
+            </b>
+            </ul>
+            <p style="font-size: 20px;">Hãy khám phá các sản phẩm của chúng tôi và liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc ý kiến đóng góp nào!</p>
+          </div>
+          </div>
+          <script>
+            function toggleContent() {
+              var moreContent = document.getElementById("more-content");
+              var readMoreButton = document.getElementById("read-more-button");
+          
+              if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                readMoreButton.innerHTML = "Ẩn đi";
+              } else {
+                moreContent.style.display = "none";
+                readMoreButton.innerHTML = "Xem thêm";
+              }
+            }
+          </script>
+          
+          <footer>
+            <div class="footer-container">
+              <div class="footer-row">
+                <div class="footer-column">
+                  <h3>Liên hệ khách hàng</h3>
+                  <ul>
+                    <li><a href="https://prosupport.logi.com/hc/vi/requests/new?ticket_form_id=360002418454">Trung tâm trợ giúp</a></li>
+                    <li><a href="https://id.logi.com/index.html?redirect_uri=https://logitech.zendesk.com/access/jwt&client_id=f4cbf5f1-8df3-4e7b-95dd-98e7c1f84e5e&response_type=token&locale=vi&return_to=https%3A%2F%2Fsupport.logi.com%2Fhc%2Fvi%2Frequests%2Fnew%3Fticket_form_id%3D360000994993">
+                      Hỗ trợ sản phẩm</a></li>
+                    <li><a href="https://jobs.jobvite.com/logitech">Tìm kiếm trung tâm bảo hành</a></li>
+                    <li><a href="https://www.logitech.com/vi-vn/about/contact.html">Liên hệ chúng tôi</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Thông tin</h3>
+                  <ul>
+                    <li><a href="gioiThieu.html">Về chúng tôi</a></li>
+                    <li><a href="https://blog.logitech.com/">Blog</a></li>
+                    <li><a href="https://news.logitech.com/overview/default.aspx">Tin tức và thông báo báo chí</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Kết nối với chúng tôi</h3>
+                 <ul>
+          <li style="font-size: 20px; display: inline-block">2001210674-Ngô Chí Thiện</li>
+          <li style="font-size: 50px; display: inline-block"><a href="https://vi-vn.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li style="font-size: 50px; display: inline-block; margin-left: 20px;"><a href="https://www.youtube.com/?gl=VN"><i class="fa-brands fa-youtube"></i></a></li>
+          <li style="font-size: 50px; display: inline-block; margin-left: 20px;"><a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Địa chỉ</h3>
+                  <p> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP HCM</p>
+                  <p>Email: thienngo2003@gmail.com</p>
+                  <p>Điện thoại: 0123456789</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+      
+</body>
+</html>

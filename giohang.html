@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giỏ hàng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4e7deb27d3.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+  
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+  
+    .cart {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+  
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+  
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  
+    .cart-item-info {
+      flex: 1;
+    }
+  
+    .cart-item-title {
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+    }
+  
+    .cart-item-price {
+      margin: 5px 0;
+      color: #007bff;
+      font-size: 1.2rem;
+    }
+  
+    .cart-total {
+      text-align: right;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #333;
+    }
+  
+    .cart-total span {
+      color: #ff0000;
+    }
+    
+    .cart-payment {
+      text-align: right;
+      margin-top: 20px;
+    }
+    
+    .cart-payment button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cart-payment button:hover
+    {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</h1>
+  <div class="cart">
+    <div class="cart-item">
+      <img src="image\Logitech G102.jpg" alt="Sản phẩm 1">
+      <div class="cart-item-info">
+        <h3 class="cart-item-title">Sản phẩm 1</h3>
+        <p class="cart-item-price">Giá: 700.000đ</p>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="image\Bàn phím cơ gaming Logitech G512 GX.jpg" alt="Sản phẩm 2">
+      <div class="cart-item-info">
+        <h3 class="cart-item-title">Sản phẩm 2</h3>
+        <p class="cart-item-price">Giá: 500.000đ</p>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="image\Logitech MX Anywhere 3.jpg" alt="Sản phẩm 3">
+      <div class="cart-item-info">
+        <h3 class="cart-item-title">Sản phẩm 3</h3>
+        <p class="cart-item-price">Giá: 600.000đ</p>
+      </div>
+    </div>
+    <div class="cart-total">
+      <i class="fa-solid fa-cart-shopping"></i> Tổng cộng: <span>1.800.000đ</span>
+    </div>
+    <div class="cart-payment">
+      <a href="login.html"><button>Thanh toán</button></a> 
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Thien Shop</title>
+    <link rel="stylesheet" href="style\style.css">
+    <script src="https://kit.fontawesome.com/4e7deb27d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+       <a href="index.html">
+        <h7>Logitech</h7>
+       </a>
+        
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li>
+            <a href="#">Sản phẩm</a>
+            <ul class="sub-menu">
+              <li><a href="Chuoc.html">Chuộc</a></li>
+              <li><a href="BanPhim.html">Bàn phím</a></li>
+              <li><a href="Chuoc.html">Tai nghe</a></li>
+            </ul>
+          </li>
+          <li><a href="gioiThieu.html">Giới thiệu</a></li>
+          <li><a href="dangki.html">Đăng ký</a></li>
+          <li><a href="giohang.html">
+            <div class="search-icon" style="font-size: 30px;"><i class="fa-solid fa-cart-shopping"></i></div></a></li>
+            <li><a href="login.html">
+              <div class="usericon" style="font-size: 30px;"><i class="fa-solid fa-user"></i></div></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+      <div class="product">
+        <img src="image\gioithieu1.jpg" alt="Logitech M330 Silent Plus">
+        <h3><b>LÀM CHỦ KHÔNG GIAN CỦA BẠN</b></h3>
+        <a href="Chuoc.html"><p>Combo Chuột và Bàn phím mỏng MK470</p></a>
+      </div>
+      <div class="product">
+        <img src="image\gioithieu2.jpg" alt="Logitech M330 Silent Plus">
+        <h3><b>TỰ TIN SÁNG TẠO</b></h3>
+        <a href="BanPhim.html">
+          <p>Bàn phím mỏng không dây đa thiết bị K580</p>
+        </a>
+        
+      </div>
+      <div class="product">
+        <img src="image\gioithieu3.jpg" alt="Logitech M330 Silent Plus">
+        <h3><b>KHÁM PHÁ KỸ NĂNG</b></h3>
+        <a href="BanPhim.html">
+          <p>Bàn phím mỏng không dây đa thiết bị K580</p>
+        </a>
+      </div>
+      <div id="chat-widget">
+        <!-- Hiển thị biểu tượng hoặc văn bản để mở chat -->
+        <div class="chat-button">
+          <span class="icon"><i class="fa-solid fa-comment-dots"></i></span>
+
+        </div>
+        
+        <!-- Hiển thị ô chat -->
+        <div class="chat-box">
+          <!-- Nội dung chat sẽ được tải lên từ công cụ chat của bên thứ ba -->
+          <p>Hi</p>
+        </div>
+      </div>
+      <br> <br> <br> <br>
+    <!--Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="image\trangchu1.jpg" style="width:100%">
+        <div class="text">Chuộc và bàn phím</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="image\trangchu2.jpg" style="width:100%">
+        <div class="text">Tai nghe</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="image\trangchu3.jpg" style="width:100%">
+        <div class="text">Thiết bị di động</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Slideshow -->
+ <br><br>
+    <!--Java de xu li Slide-->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-column">
+        <h3>Liên hệ khách hàng</h3>
+        <ul>
+          <li><a href="https://prosupport.logi.com/hc/vi/requests/new?ticket_form_id=360002418454">Trung tâm trợ giúp</a></li>
+          <li><a href="https://id.logi.com/index.html?redirect_uri=https://logitech.zendesk.com/access/jwt&client_id=f4cbf5f1-8df3-4e7b-95dd-98e7c1f84e5e&response_type=token&locale=vi&return_to=https%3A%2F%2Fsupport.logi.com%2Fhc%2Fvi%2Frequests%2Fnew%3Fticket_form_id%3D360000994993">
+            Hỗ trợ sản phẩm</a></li>
+          <li><a href="https://jobs.jobvite.com/logitech">Tìm kiếm trung tâm bảo hành</a></li>
+          <li><a href="https://www.logitech.com/vi-vn/about/contact.html">Liên hệ chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Thông tin</h3>
+        <ul>
+          <li><a href="gioiThieu.html">Về chúng tôi</a></li>
+          <li><a href="https://blog.logitech.com/">Blog</a></li>
+          <li><a href="https://news.logitech.com/overview/default.aspx">Tin tức và thông báo báo chí</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Kết nối với chúng tôi</h3>
+       <ul>
+          <li style="font-size: 20px; display: inline-block">2001210674-Ngô Chí Thiện</li>
+          <li style="font-size: 50px; display: inline-block"><a href="https://vi-vn.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li style="font-size: 50px; display: inline-block; margin-left: 20px;"><a href="https://www.youtube.com/?gl=VN"><i class="fa-brands fa-youtube"></i></a></li>
+          <li style="font-size: 50px; display: inline-block; margin-left: 20px;"><a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Địa chỉ</h3>
+        <p> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</p>
+        <p>Email: thienngo2003@gmail.com</p>
+        <p>Điện thoại: 0123456789</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </body>
+</html>
